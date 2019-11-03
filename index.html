@@ -12,12 +12,12 @@
 
 <body>
     <div class="wrapper">
-        <header>
+        <header class="top">
             <div class="logo">
                 <img src="img/chimp-face-of-brazil32.png" alt="Monkey logo">
                 <p>Frontend monkey</p>
             </div>
-            <nav>
+            <nav class="menu">
                 <ul>
                     <li><a href="#">About me</a></li>
                     <li><a href="#">Skills</a></li>
@@ -26,8 +26,8 @@
                 </ul>
             </nav>
             <div class="hero">
-                <h1>Frontend monkey</h1>
-                <h2>I have no idea what I'm doing here</h2>
+                <h1 class="name">Frontend monkey</h1>
+                <h2 class="slogan">I have no idea what I'm doing here</h2>
                 <div class="socials">
                     <div class="social"><a href="http://facebook.com/jakub.figlak" target="_blank"><img
                                 src="img/facebook32.png" alt="Facebook logo"></a></div>
@@ -48,7 +48,7 @@
 
         <main>
             <section class="about">
-                <h3>About me</h3>
+                <h3 class="section-title">About me</h3>
                 <article>
                     <img src="img/jakub100x100.jpg" alt="Jakub Figlak - the frontend monkey!">
                     <ul>
@@ -67,52 +67,52 @@
             </section>
 
             <section class="skills">
-                <h3>My skills</h3>
+                <h3 class="section-title">My skills</h3>
                 <div class="skill"><img src="img/html5.png" alt="HTML5 logo">
-                    <h4>HTML5</h4>
+                    <h4 class="skill-desc">HTML5</h4>
                 </div>
                 <div class="skill"><img src="img/css-3.png" alt="CSS3 logo">
-                    <h4>CSS3</h4>
+                    <h4 class="skill-desc">CSS3</h4>
                 </div>
                 <div class="skill"><img src="img/js.png" alt="JS logo">
-                    <h4>JavaScript</h4>
+                    <h4 class="skill-desc">JavaScript</h4>
                 </div>
                 <div class="skill"><img src="img/xd.png" alt="XD logo">
-                    <h4>Adobe XD</h4>
+                    <h4 class="skill-desc">Adobe XD</h4>
                 </div>
                 <div class="skill"><img src="img/php.png" alt="PHP logo">
-                    <h4>PHP</h4>
+                    <h4 class="skill-desc">PHP</h4>
                 </div>
                 <div class="skill"><img src="img/nodejs.png" alt="node.js logo">
-                    <h4>Node JS</h4>
+                    <h4 class="skill-desc">Node JS</h4>
                 </div>
             </section>
 
             <section class="portfolio">
-                <h3>Portfolio</h3>
+                <h3 class="section-title">Portfolio</h3>
                 <div class="project">
-                    <h5>Project 1</h5><button class="btn_project">View more</button>
+                    <h5 class="project-name">Project 1</h5><button class="btn_project">View more</button>
                 </div>
                 <div class="project">
-                    <h5>Project 2</h5><button class="btn_project">View more</button>
+                    <h5 class="project-name">Project 2</h5><button class="btn_project">View more</button>
                 </div>
                 <div class="project">
-                    <h5>Project 3</h5><button class="btn_project">View more</button>
+                    <h5 class="project-name">Project 3</h5><button class="btn_project">View more</button>
                 </div>
                 <div class="project">
-                    <h5>Project 4</h5><button class="btn_project">View more</button>
+                    <h5 class="project-name">Project 4</h5><button class="btn_project">View more</button>
                 </div>
                 <div class="project">
-                    <h5>Project 5</h5><button class="btn_project">View more</button>
+                    <h5 class="project-name">Project 5</h5><button class="btn_project">View more</button>
                 </div>
             </section>
 
             <section class="contact">
-                <h3>Contact me</h3>
+                <h3 class="section-title">Contact me</h3>
                 <div>
                     <p><img src="img/mail-send.png" alt="mail icon">Please describe your question. Send me a message and
                         I will answer you as soon as possible.</p>
-                    <address>
+                    <address class="my-address">
                         <p>Frontend Monkey</p>
                         <p>Poznan, Poland</p>
                         <p>ul. Tęczowa 12/3 50-000</p>
@@ -120,17 +120,17 @@
                         <p>jakub.figlak@gmail.com</p>
                     </address>
                 </div>
-                <form action="/my-handling-form-page" method="post">
-                    <h5>Let's start!</h5>
+                <form class="contact-form" action="/my-handling-form-page" method="post">
+                    <h5 class="form-title">Let's start!</h5>
                     <input type="text" id="name" name="user_name" placeholder="Name">
                     <input type="email" id="mail" name="user_mail" placeholder="Your e-mail address">
-                    <input type="topic" id="topic" name="topic" placeholder="Topic">
+                    <input type="text" id="topic" name="topic" placeholder="Topic">
                     <textarea id="msg" name="user_message" placeholder="Message" rows="10"></textarea>
-                    <button type="submit">Send your message</button>
+                    <button class="contact-button type=" submit">Send your message</button>
                 </form>
             </section>
         </main>
-        <footer>
+        <footer class="bottom">
             <p>Copyrights © 2019 CodersCrew and Frontend Monkey</p>
             <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
                     href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
