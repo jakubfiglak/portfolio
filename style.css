@@ -97,6 +97,11 @@ html {
     text-align: center;
     text-transform: uppercase;
     padding: 10px 20px;
+    transition: all 0.2s;
+}
+
+.menu a:hover {
+    background-color: var(--brown);
 }
 
 .hero {
@@ -234,8 +239,7 @@ main {
     margin-bottom: 20px;
 }
 
-.about article,
-.skills article {
+.about div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -243,7 +247,7 @@ main {
     justify-content: space-around;
 }
 
-.about article>* {
+.about div>* {
     margin: 0 20px 20px 20px;
 }
 
@@ -508,8 +512,7 @@ main {
         width: 20%;
     }
 
-    .about article,
-    .skills article {
+    .about div {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
