@@ -6,6 +6,7 @@
 }
 
 html {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     font-size: 10px;
@@ -15,6 +16,7 @@ html {
 *,
 *:before,
 *:after {
+    -webkit-box-sizing: inherit;
     box-sizing: inherit;
     margin: 0;
     padding: 0;
@@ -35,8 +37,14 @@ html {
 }
 
 .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
 }
 
@@ -52,8 +60,15 @@ html {
 }
 
 .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -61,6 +76,8 @@ html {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     list-style: none;
 }
@@ -81,9 +98,18 @@ html {
     grid-area: hero;
     position: relative;
     min-height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -117,12 +143,15 @@ html {
 }
 
 .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .social {
     padding: 15px;
     opacity: 0.6;
+    -webkit-transition: opacity 0.2;
     transition: opacity 0.2;
 }
 
@@ -132,12 +161,18 @@ html {
 
 .question {
     grid-area: question;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .question p {
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     text-align: center;
     font-size: 2.4em;
@@ -146,6 +181,7 @@ html {
 button {
     display: block;
     font-size: 1.5em;
+    background: -webkit-gradient(linear, right top, left top, from(var(--brown)), to(var(--yellow)));
     background: linear-gradient(to left, var(--brown), var(--yellow));
     padding: 10px 20px;
     margin: 20px 30px;
@@ -153,6 +189,7 @@ button {
     border-radius: 10px;
     width: 15%;
     text-transform: uppercase;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
 
@@ -173,14 +210,19 @@ main {
 .about,
 .skills,
 .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 80%;
+    -webkit-box-shadow: 0 0 10px var(--yellow);
     box-shadow: 0 0 10px var(--yellow);
 }
 
 .section-title {
     font-size: 3em;
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     text-align: center;
     padding-top: 10px;
@@ -189,7 +231,10 @@ main {
 
 .about article,
 .skills article {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
@@ -219,17 +264,20 @@ main {
 }
 
 .about p {
+    -ms-flex-preferred-size: 55%;
     flex-basis: 55%;
     padding-left: 20px;
     border-left: 3px dotted var(--yellow);
 }
 
 .skills {
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     padding-bottom: 20px;
 }
 
 .skill {
+    -ms-flex-preferred-size: 12%;
     flex-basis: 12%;
 }
 
@@ -301,6 +349,7 @@ main {
     width: 200px;
     margin: 0;
     opacity: 0;
+    -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
 }
 
@@ -309,15 +358,24 @@ main {
 }
 
 .contact {
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 
 .contact div {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     background-color: var(--yellow);
+    -ms-flex-preferred-size: 40%;
     flex-basis: 40%;
     padding: 20px;
 }
@@ -331,11 +389,13 @@ main {
     background-color: var(--yellow);
     right: -10px;
     top: 57px;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 .contact img {
     display: block;
+    -webkit-transform: rotate(-30deg);
     transform: rotate(-30deg);
 }
 
@@ -344,8 +404,15 @@ main {
 }
 
 .contact-form {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding: 50px 0 0 20px;
 }
@@ -375,8 +442,33 @@ main {
 
 .contact-form .contact-button {
     width: 50%;
+    -ms-flex-item-align: end;
     align-self: flex-end;
     margin-right: 0;
+}
+
+.monkey {
+    position: fixed;
+    top: -220px;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    -webkit-animation: monkey 2s linear both;
+    animation: monkey 2s linear both;
+}
+
+@-webkit-keyframes monkey {
+    100% {
+        -webkit-transform: translateY(200px);
+        transform: translateY(200px);
+    }
+}
+
+@keyframes monkey {
+    100% {
+        -webkit-transform: translateY(200px);
+        transform: translateY(200px);
+    }
 }
 
 .bottom {
